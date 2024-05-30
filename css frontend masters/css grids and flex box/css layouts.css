@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* turn off margin/padding, set font and size for the page */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+/* turn off bullets, push the box down the page, set a border plus width and height for demonstration purpose */
+ul {
+  padding: 0;
+  margin: 5rem auto;
+  list-style: none;
+  border: 10px dotted #9b2226;
+  width: 900px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+/* set a border and a background color to see each LI. min width and min-height are not necessarily a good idea in flex box, but thet are needed for the demo to better see the properties work.*/
+li {
+  border: 2px solid #001219;
+  background-color: #ee9800;
+  /* min-width: 100px; */
+  height: 100px;
+  flex-basis: 10%;
+  order: 1;
+}
+.flex2 {
+  order: 2;
+  flex-basis: 25%;
+}
